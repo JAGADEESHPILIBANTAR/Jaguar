@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Body from './res-body/Body';
+import Nav from './resp-nav/Nav';
+import Vehicles from './resp-nav/Vehicles';
+import Purchase from './resp-nav/Purchase';
+import Owners from './resp-nav/Owners';
+import Explore from './resp-nav/Explore';
+// import Offcanvas from './Offcanvas';
+// import Carousel from './Carousel/Slider';
+// import Content from './Content/Contnt';
+// import Footer from './Footer/Footer';
+// import Nav from './Navbar/Nav';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+      <Nav/>
+      <Routes>
+        <Route path='/vehicles' element={<Vehicles/>}/>
+        <Route path='/purchase' element={<Purchase/>}/>
+        <Route path='/owners' element={<Owners/>}/>
+        <Route path='/explore' element={<Explore/>}/>
+      </Routes>
+    </BrowserRouter>
+    <Body/>
+    {/* <Offcanvas/> */}
+    </>
   );
 }
 

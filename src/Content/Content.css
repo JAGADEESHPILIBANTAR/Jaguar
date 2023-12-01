@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#content video{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+#maincontent{
+    background-color: rgb(36, 31, 31);
+}
+#content {
+    position: relative;
+}
+  
+video {
+    width: 100%;
+    height: auto;
+}
+  
+#playPauseButton {
+    position: absolute;
+    bottom: 12px;
+    left: 11%;
+    /* height: 0px;
+    width: 30px; */
+    font-size: x-large;
+    cursor: pointer;
+    background-color: none;
+}
+#text{
+    margin-left: 15%;
+    color: white;
+    font-size: xx-large;
+    padding: 5px 20px;
+    margin-top: 30px;
+}
+#text1{
+    width: auto;
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+}
+#text1 div div{
+    font-size: 3rem;
+}
+#line{
+    height: 2000px;
+    color: white;
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding:10px 0px 10px;
+}
+dl{
+    font-size: small;
+    margin-top: 10px;
+}
+#image1{
+    width: 90%;
+    margin: 0 auto;
+    height: 950px;
+    display: flex;
+    align-items: center;
+    /* margin-left: 50px; */
+    margin-top: 70px;
+}
+p{
+    width: 50%;
+    margin-left:15%;
+    font-size: xx-large;
+    padding: 50px 20px 20px 0px;
+    color: white;
+}
+#text2{
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+}
+#secondmain{
+    background-color: black;
+}
+#text3{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding-bottom: 50px;
+    margin-left: 15%;
+}
